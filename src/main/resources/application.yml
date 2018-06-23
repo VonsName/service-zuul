@@ -15,4 +15,5 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: service-feign
-      
+  ignored-services: service-ribbon,service-feign #禁止使用原服务名访问 使用 "*" 禁止所有的真实服务名
+  prefix: /zuul #统一前缀
